@@ -17,8 +17,8 @@ class lobipGUI:
         master.title("Life of  Brian Image Processor")
         
         
-        screenWidth = root.winfo_screenwidth()
-        screenHeight = root.winfo_screenheight()
+        screenWidth = master.winfo_screenwidth()
+        screenHeight = master.winfo_screenheight()
         
         # adjust dimensions to middle of screen and make room for box
         
@@ -32,7 +32,7 @@ class lobipGUI:
         
         # specify geometry, must make coords a string normally looks like "490x190+220+200"
         
-        root.geometry("490x190+"+str(xLocation)+"+"+str(yLocation))        
+        master.geometry("490x190+"+str(xLocation)+"+"+str(yLocation))        
 
         # using grid rather than pack to set buttons in correct spot
                 
